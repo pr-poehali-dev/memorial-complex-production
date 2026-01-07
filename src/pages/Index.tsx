@@ -256,10 +256,7 @@ function Index() {
                     <SelectContent>
                       {materials.map((mat) => (
                         <SelectItem key={mat.name} value={mat.name}>
-                          <div>
-                            <div className="font-medium">{mat.name}</div>
-                            <div className="text-xs text-muted-foreground">{mat.description}</div>
-                          </div>
+                          {mat.name} — {mat.description}
                         </SelectItem>
                       ))}
                     </SelectContent>
